@@ -19,7 +19,7 @@ const Nav = () => {
             Gaming Portal
         </h1>
       </div>
-        <ul className="list-none flex gap-8">
+        <ul className="list-none flex gap-8 mr-14">
             <li className="">Home</li>
             <li className="opacity-60">Meet The Team</li>
             <li className="opacity-60">Mission Statement</li>
