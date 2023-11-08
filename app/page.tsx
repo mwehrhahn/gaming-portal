@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Logo from '../public/logos/logo_full_transparent.png'
 import Nav from '@/components/nav/nav'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -16,9 +17,10 @@ export default function Home() {
             <h1>
               A place for passionate gamers and developers to meet and collaborate.
             </h1>
+            <Link href="/portal">
             <button className="mt-6 justify-center items-center bg-indigo-600 bg-opacity-50 border border-indigo-600 border-opacity-50 px-6 py-3 rounded-lg flex justify-center items-center hover:bg-opacity-100 duration-200">
               Enter the Portal
-            </button>
+            </button></Link>
           </div>
          
           <video className="mt-12" autoPlay loop muted>
