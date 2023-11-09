@@ -3,23 +3,145 @@ import React from 'react';
 import Nav from '@/components/nav/nav';
 import Image from "next/image";
 import Logo from "../../public/logos/logo_full_transparent.png";
+import Cs from "../../public/images/csgo.png";
+import Minecraft from "../../public/images/minecraft.png";
+import Fortnite from "../../public/images/fortnite.png";
+import Roblox from "../../public/images/roblox.jpg";
+import League from "../../public/images/league.jpg";
+import Cyberpunk from "../../public/images/cyberpunk.jpg"
+import Sims from "../../public/images/sims.jpg"
+import Cod from "../../public/images/cod.jpg"
+import Valorant from "../../public/images/valorant.jpg"
+import Gta from "../../public/images/gta.jpg"
 
-const Team = () => {
+const Portal = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="max-w-screen text-white p-6 text-center bg-slate-900">
         <div className="max-w-screen-xl m-auto">
           <Nav></Nav>
           <h1>Welcome to the PortalPage</h1>
-          <p>This is the Portal page content.</p>
+          <p className="mt-6">Click on any game to continue</p>
         </div>
       </div>
 
-      <main className="flex-grow pb-16">
-        <div>
-          <h1>Content Here</h1>
-         
-        </div>
+      <main className="flex-grow flex flex-row items-center justify-center bg-slate-700">
+        <ul className="flex justify-center flex-col list-none">
+          <li className='mt-4 mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Cs}
+              alt=""
+              width={350}
+              height={350}
+            />
+          </li>
+          <li className='mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Minecraft}
+              alt=""
+              width={350}
+              height={350}
+            />
+          </li>
+          <li className='mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Fortnite}
+              alt=""
+              width={350}
+              height={350}
+            />
+          </li>
+        </ul>
+        <ul className="ml-4 flex justify-center flex-col list-none">
+          <li className='mt-4 mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Roblox}
+              alt=""
+              width={350}
+              height={350}
+            />
+          </li>
+          <li className='mb-4'>
+            <Image
+              className='rounded-lg'
+              src={League}
+              alt=""
+              width={350}
+              height={350}
+            />
+          </li>
+          <li className='mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Cyberpunk}
+              alt=""
+              width={350}
+              height={350}
+            />
+          </li>
+        </ul>
+        <ul className="ml-4 flex justify-center flex-col list-none">
+          <li className='mt-4 mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Sims}
+              alt=""
+              width={300}
+              height={300}
+            />
+          </li>
+          <li className='mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Cod}
+              alt=""
+              width={300}
+              height={300}
+            />
+          </li>
+          <li className='mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Valorant}
+              alt=""
+              width={300}
+              height={300}
+            />
+          </li>
+        </ul>
+        <ul className="ml-4 flex justify-center flex-col list-none">
+          <li className='mt-4 mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Gta}
+              alt=""
+              width={300}
+              height={300}
+            />
+          </li>
+          <li className='mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Cod}
+              alt=""
+              width={300}
+              height={300}
+            />
+          </li>
+          <li className='mb-4'>
+            <Image
+              className='rounded-lg'
+              src={Valorant}
+              alt=""
+              width={300}
+              height={300}
+            />
+          </li>
+        </ul>
       </main>
 
       <footer className="bg-slate-900 rounded-lg shadow dark:bg-gray-900">
@@ -64,4 +186,4 @@ const Team = () => {
   );
 }
 
-export default Team;
+export default Portal;

@@ -23,7 +23,7 @@ export default function Home() {
             </button></Link>
           </div>
          
-          <video className="mt-12" autoPlay loop muted>
+          <video className="mt-12 rounded-lg" autoPlay loop muted>
             <source src="animations/gp.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

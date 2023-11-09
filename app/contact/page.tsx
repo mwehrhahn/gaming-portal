@@ -4,7 +4,7 @@ import Nav from '@/components/nav/nav';
 import Image from "next/image";
 import Logo from "../../public/logos/logo_full_transparent.png";
 
-const Team = () => {
+const Contact = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="max-w-screen text-white p-6 text-center bg-slate-900">
@@ -64,4 +64,4 @@ const Team = () => {
   );
 }
 
-export default Team;
+export default Contact;
