@@ -14,6 +14,8 @@ import Sims from "../../public/images/sims.jpg"
 import Cod from "../../public/images/cod.jpg"
 import Valorant from "../../public/images/valorant.jpg"
 import Gta from "../../public/images/gta.jpg"
+import Apex from "../../public/images/Apex.jpg"
+import nba2k24 from "../../public/images/nba2k24.jpg"
 
 const Portal = () => {
   return (
@@ -29,6 +31,7 @@ const Portal = () => {
       <main className="flex-grow flex flex-row items-center justify-center bg-slate-700">
         <ul className="flex justify-center flex-col list-none">
           <li className='mt-4 mb-4'>
+            <Link href="/CS2">
             <Image
               className='rounded-lg'
               src={Cs}
@@ -36,8 +39,10 @@ const Portal = () => {
               width={350}
               height={350}
             />
+            </Link>
           </li>
           <li className='mb-4'>
+            <Link href="/Minecraft">
             <Image
               className='rounded-lg'
               src={Minecraft}
@@ -45,8 +50,10 @@ const Portal = () => {
               width={350}
               height={350}
             />
+            </Link>
           </li>
           <li className='mb-4'>
+            <Link href="/Fortnite">
             <Image
               className='rounded-lg'
               src={Fortnite}
@@ -54,10 +61,12 @@ const Portal = () => {
               width={350}
               height={350}
             />
+            </Link>
           </li>
         </ul>
         <ul className="ml-4 flex justify-center flex-col list-none">
           <li className='mt-4 mb-4'>
+            <Link href="/Roblox">
             <Image
               className='rounded-lg'
               src={Roblox}
@@ -65,8 +74,10 @@ const Portal = () => {
               width={350}
               height={350}
             />
+            </Link>
           </li>
           <li className='mb-4'>
+          <Link href="/League">
             <Image
               className='rounded-lg'
               src={League}
@@ -74,8 +85,10 @@ const Portal = () => {
               width={350}
               height={350}
             />
+            </Link>
           </li>
           <li className='mb-4'>
+            <Link href="/Cyberpunk">
             <Image
               className='rounded-lg'
               src={Cyberpunk}
@@ -83,10 +96,12 @@ const Portal = () => {
               width={350}
               height={350}
             />
+            </Link>
           </li>
         </ul>
         <ul className="ml-4 flex justify-center flex-col list-none">
           <li className='mt-4 mb-4'>
+            <Link href="/Sims">
             <Image
               className='rounded-lg'
               src={Sims}
@@ -94,6 +109,7 @@ const Portal = () => {
               width={300}
               height={300}
             />
+            </Link>
           </li>
           <li className='mb-4'>
   <Link href="/MWII">
@@ -108,6 +124,7 @@ const Portal = () => {
 </li>
 
           <li className='mb-4'>
+            <Link href="/Valorant">
             <Image
               className='rounded-lg'
               src={Valorant}
@@ -115,10 +132,12 @@ const Portal = () => {
               width={300}
               height={300}
             />
+            </Link>
           </li>
         </ul>
         <ul className="ml-4 flex justify-center flex-col list-none">
           <li className='mt-4 mb-4'>
+            <Link href="/Gta">
             <Image
               className='rounded-lg'
               src={Gta}
@@ -126,24 +145,29 @@ const Portal = () => {
               width={300}
               height={300}
             />
+            </Link>
           </li>
           <li className='mb-4'>
+            <Link href="/Apex">
             <Image
               className='rounded-lg'
-              src={Cod}
+              src={Apex}
               alt=""
               width={300}
               height={300}
             />
+            </Link>
           </li>
           <li className='mb-4'>
+            <Link href="/2k24">
             <Image
               className='rounded-lg'
-              src={Valorant}
+              src={nba2k24}
               alt=""
               width={300}
               height={300}
             />
+            </Link>
           </li>
         </ul>
       </main>
