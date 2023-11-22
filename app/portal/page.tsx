@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import Link from 'next/link'
 import Nav from '@/components/nav/nav';
 import Image from "next/image";
 import Logo from "../../public/logos/logo_full_transparent.png";
@@ -20,7 +21,7 @@ const Portal = () => {
       <div className="max-w-screen text-white p-6 text-center bg-slate-900">
         <div className="max-w-screen-xl m-auto">
           <Nav></Nav>
-          <h1>Welcome to the PortalPage</h1>
+          <h1>Welcome to the Portal</h1>
           <p className="mt-6">Click on any game to continue</p>
         </div>
       </div>
@@ -95,14 +96,17 @@ const Portal = () => {
             />
           </li>
           <li className='mb-4'>
-            <Image
-              className='rounded-lg'
-              src={Cod}
-              alt=""
-              width={300}
-              height={300}
-            />
-          </li>
+  <Link href="/MWII">
+    <Image
+      className='rounded-lg'
+      src={Cod}
+      alt=""
+      width={300}
+      height={300}
+    />
+  </Link>
+</li>
+
           <li className='mb-4'>
             <Image
               className='rounded-lg'
