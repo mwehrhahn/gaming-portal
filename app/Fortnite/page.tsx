@@ -20,10 +20,11 @@ const Fortnite = () => {
       </div>
 
       <div className="flex justify-center items-center h-full">
-      <main className="flex-grow pb-16" style={{ paddingInline: '21rem' }}>
-  <div className="flex space-x-4">
-    <div className="flex flex-col items-center">
-      <h3>Live Streams</h3>
+      <main className="flex-grow pb-16" style={{ paddingInline: '21rem', textAlign: 'center' }}>
+{/* Live Streams Section */}
+<div className="stream-section">
+  <h1>Live Streams</h1>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Link href="https://www.twitch.tv/directory/category/fortnite" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
@@ -34,9 +35,12 @@ const Fortnite = () => {
         />
       </Link>
     </div>
+    </div>
 
-    <div className="flex flex-col items-center">
-      <h3>Reviews</h3>
+{/* Reviews Section */}
+<div className="review-section">
+  <h1>Reviews</h1>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Link href="https://www.ign.com/games/fortnite" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
@@ -47,15 +51,18 @@ const Fortnite = () => {
         />
       </Link>
     </div>
-
-    <div className="flex flex-col items-center"><p>Learn How to Develop in C++</p>
+</div>
+    {/* Code Section */}
+<div className="code-section">
+  <h1>Code Base</h1>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Link href="https://www.youtube.com/watch?v=g7yv5VOsM5A" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
           src={Youtube}
           alt=""
-          width={250}
-          height={250}
+          width={400}
+          height={400}
         />
       </Link>
     </div>
