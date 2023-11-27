@@ -19,49 +19,66 @@ const Apex = () => {
       </div>
 
       <div className="flex justify-center items-center h-full">
-      <main className="flex-grow pb-16" style={{ paddingInline: '21rem' }}>
-  <div className="flex space-x-4">
-    <div className="flex flex-col items-center">
-      <h3>Live Streams</h3>
-      <Link href="https://www.youtube.com/channel/UC28ZciCEOs5ruffKqyvrcYA" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='rounded-lg'
-          src={Youtube}
-          alt=""
-          width={350}
-          height={350}
-        />
-      </Link>
-    </div>
+      <main className="flex-grow pb-16" style={{ paddingInline: '21rem', textAlign: 'center' }}>
 
-    <div className="flex flex-col items-center">
-      <h3>Reviews</h3>
-      <Link href="https://www.ign.com/games/call-of-duty-modern-warfare-ii-2022/user-reviews" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='rounded-lg'
-          src={IGN}
-          alt=""
-          width={200}
-          height={200}
-        />
-      </Link>
-    </div>
 
-    <div className="flex flex-col items-center"><p>Learn How to Develop in C++</p>
-      <Link href="https://www.youtube.com/watch?v=g7yv5VOsM5A" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='rounded-lg'
-          src={Youtube}
-          alt=""
-          width={250}
-          height={250}
-        />
-      </Link>
-    </div>
+
+{/* Live Streams Section */}
+<div className="stream-section">
+  <h1>Live Streams</h1>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <Link href="https://www.youtube.com/channel/UCtVufP_2Z8vCZjJOCPc3tjQ/live" target="_blank" rel="noopener noreferrer">
+      <Image
+        className='rounded-lg'
+        src={Youtube}
+        alt=""
+        width={350}
+        height={350}
+      />
+    </Link>
   </div>
+</div>
+
+{/* Reviews Section */}
+<div className="review-section">
+  <h1>Reviews</h1>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <Link href="https://www.ign.com/articles/apex-legends-review-2" target="_blank" rel="noopener noreferrer">
+      <Image
+        className='rounded-lg'
+        src={IGN}
+        alt=""
+        width={200}
+        height={200}
+      />
+    </Link>
+  </div>
+</div>
+
+{/* Code Section */}
+<div className="code-section">
+  <h1>Code Base</h1>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <Link href="https://www.youtube.com/watch?v=g7yv5VOsM5A" target="_blank" rel="noopener noreferrer">
+      <Image
+        className='rounded-lg'
+        src={Youtube}
+        alt=""
+        width={400}
+        height={400}
+      />
+    </Link>
+  </div>
+</div>
+
+
 </main>
 
+
 </div>
+
+
+
 
 
 
