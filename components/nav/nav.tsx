@@ -8,6 +8,7 @@ const Nav = () => {
   return (
     <div className="flex justify-between items-center gap-4 z-20 relative bg-transparent">
       <div className="flex justify-center items-center gap-2">
+      <Link href="/">
         <Image
           src={Logo}
           alt=""
@@ -15,9 +16,11 @@ const Nav = () => {
           width={100}
           style={{ margin: "-20px"}}
         ></Image>
+          </Link>
         <h1 className="">
             Gaming Portal
         </h1>
+      
       </div>
         <ul className="list-none flex gap-8 mr-14">
             <li>
