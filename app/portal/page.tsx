@@ -36,8 +36,8 @@ const Portal = () => {
               className='rounded-lg'
               src={Cs}
               alt=""
-              width={350}
-              height={350}
+              width={300}
+              height={300}
             />
             </Link>
           </li>
@@ -47,8 +47,8 @@ const Portal = () => {
               className='rounded-lg'
               src={Minecraft}
               alt=""
-              width={350}
-              height={350}
+              width={300}
+              height={300}
             />
             </Link>
           </li>
@@ -58,8 +58,8 @@ const Portal = () => {
               className='rounded-lg'
               src={Fortnite}
               alt=""
-              width={350}
-              height={350}
+              width={300}
+              height={300}
             />
             </Link>
           </li>
@@ -71,8 +71,8 @@ const Portal = () => {
               className='rounded-lg'
               src={Roblox}
               alt=""
-              width={350}
-              height={350}
+              width={300}
+              height={300}
             />
             </Link>
           </li>
@@ -82,8 +82,8 @@ const Portal = () => {
               className='rounded-lg'
               src={League}
               alt=""
-              width={350}
-              height={350}
+              width={300}
+              height={300}
             />
             </Link>
           </li>
@@ -93,8 +93,8 @@ const Portal = () => {
               className='rounded-lg'
               src={Cyberpunk}
               alt=""
-              width={350}
-              height={350}
+              width={300}
+              height={300}
             />
             </Link>
           </li>
