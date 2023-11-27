@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Logo from "../../public/logos/logo_full_transparent.png";
 import Youtube from "../../public/logos/youtube-logo-png-2074.png";
 import IGN from "../../public/logos/ign-logo-transparent.png";
+import Twitch from "../../public/logos/Twitch.png";
 
 const Minecraft = () => {
   return (
@@ -23,10 +24,10 @@ const Minecraft = () => {
   <div className="flex space-x-4">
     <div className="flex flex-col items-center">
       <h3>Live Streams</h3>
-      <Link href="https://www.youtube.com/channel/UC28ZciCEOs5ruffKqyvrcYA" target="_blank" rel="noopener noreferrer">
+      <Link href="https://www.twitch.tv/directory/category/minecraft" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
-          src={Youtube}
+          src={Twitch}
           alt=""
           width={350}
           height={350}
@@ -36,7 +37,7 @@ const Minecraft = () => {
 
     <div className="flex flex-col items-center">
       <h3>Reviews</h3>
-      <Link href="https://www.ign.com/games/call-of-duty-modern-warfare-ii-2022/user-reviews" target="_blank" rel="noopener noreferrer">
+      <Link href="https://www.ign.com/games/minecraft" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
           src={IGN}
