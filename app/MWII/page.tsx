@@ -6,23 +6,46 @@ import Link from 'next/link'
 import Logo from "../../public/logos/logo_full_transparent.png";
 import Youtube from "../../public/logos/youtube-logo-png-2074.png";
 import IGN from "../../public/logos/ign-logo-transparent.png";
+import MW2 from "../../public/images/cod.jpg"
 
 const MWII = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="max-w-screen text-white p-6 text-center bg-slate-900">
-        <div className="max-w-screen-xl m-auto">
+        <div className=" m-auto">
           <Nav></Nav>
-          <h1>Welcome to the MWII Page</h1>
-          <p>This is the MWII page content.</p>
+          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         </div>
       </div>
 
       <div className="flex justify-center items-center h-full">
-      <main className="flex-grow pb-16" style={{ paddingInline: '21rem' }}>
-  <div className="flex space-x-4">
-    <div className="flex flex-col items-center">
-      <h3>Live Streams</h3>
+      <main className="flex-grow pb-16" style={{ 
+        paddingInline: '21rem', 
+      textAlign: 'center', 
+      position: 'relative', 
+      backgroundImage: 'url(/images/MwIImap.jpg)',
+       backgroundSize: 'cover', 
+       backgroundPosition: 'center', 
+       backgroundRepeat: 'no-repeat' }}>
+  {/* Game Logo */}
+  <div className="game-logo" style={{ display: 'flex', justifyContent: 'left',top: '28rem',position: 'absolute' }}>
+      
+      <Link href="https://www.callofduty.com/modernwarfare2" target="_blank" rel="noopener noreferrer">
+      <h1 style={{fontSize:"3rem",position:"relative"}}>Ready For War?</h1>
+          
+        <Image
+          className='rounded-lg'
+          src={MW2}
+          alt=""
+          width={350}
+          height={350}
+        />
+      </Link>
+    </div>
+    {/* Live Streams Section */}
+    <div className="stream-section"style={{padding: "2rem"}}>
+      <h1 style={{position: "relative",fontSize:"3rem",textDecoration:"underline" }}>Live Streams</h1>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Link href="https://www.youtube.com/channel/UC28ZciCEOs5ruffKqyvrcYA" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
@@ -33,9 +56,12 @@ const MWII = () => {
         />
       </Link>
     </div>
+    </div>
 
-    <div className="flex flex-col items-center">
-      <h3>Reviews</h3>
+    {/* Reviews Section */}
+    <div className="review-section"style={{padding: "2rem"}}>
+      <h1 style={{position: "relative",bottom: "2rem",fontSize:"3rem",textDecoration:"underline" }}>Reviews</h1>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Link href="https://www.ign.com/games/call-of-duty-modern-warfare-ii-2022/user-reviews" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
@@ -45,9 +71,14 @@ const MWII = () => {
           height={200}
         />
       </Link>
+      </div>
     </div>
 
-    <div className="flex flex-col items-center"><p>Learn How to Develop in C++</p>
+
+       {/* Code Section */}
+       <div className="code-section"style={{padding: "5rem"}}>
+      <h1 style={{position: "relative",top: "2rem",fontSize:"3rem",textDecoration:"underline" }}>Code Base</h1>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Link href="https://www.youtube.com/watch?v=g7yv5VOsM5A" target="_blank" rel="noopener noreferrer">
         <Image
           className='rounded-lg'
